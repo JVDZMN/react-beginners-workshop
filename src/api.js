@@ -1,4 +1,4 @@
-export function fetchGifs(searchKeyword) {
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=3uFNCQSXD7E2cq0Mi754OHifIP556FE3&q=${searchKeyword}`;
+export function fetchMembers() {
+  const url = `https://api.github.com/orgs/hackyourfuture-cph/members`;
   return fetch(url).then(response => response.json());
 }
